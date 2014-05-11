@@ -1,2 +1,2 @@
-snapcharts
+Snap Charts
 ==========

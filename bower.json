@@ -1,0 +1,7 @@
+{
+    "name": "snapcharts",
+    "dependencies": {
+        "jquery": "~2.0.0",
+        "snap.svg": "~0.2.0"
+    }
+}

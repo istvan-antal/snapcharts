@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SnapCharts - TimeSeriesChart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <body>
+        <div style="height: 500px;" id='chart' data-values='[{"name":"Items","values":[{"date":"2013-04-09","count":1,"value":1,"time":1365458400000},{"date":"2013-06-29","count":4,"value":4,"time":1372456800000},{"date":"2013-06-30","count":1,"value":1,"time":1372543200000},{"date":"2013-07-05","count":1,"value":1,"time":1372975200000},{"date":"2013-08-18","count":1,"value":1,"time":1376776800000},{"date":"2013-08-19","count":1,"value":1,"time":1376863200000},{"date":"2013-09-20","count":1,"value":1,"time":1379628000000},{"date":"2013-10-03","count":1,"value":1,"time":1380751200000},{"date":"2013-10-07","count":1,"value":1,"time":1381096800000},{"date":"2013-10-12","count":1,"value":1,"time":1381528800000},{"date":"2013-10-25","count":1,"value":1,"time":1382652000000},{"date":"2013-11-11","count":1,"value":1,"time":1384124400000},{"date":"2013-11-24","count":1,"value":1,"time":1385247600000},{"date":"2013-12-23","count":1,"value":1,"time":1387753200000},{"date":"2014-01-01","count":2,"value":2,"time":1388530800000},{"date":"2014-01-23","count":1,"value":1,"time":1390431600000},{"date":"2014-02-10","count":1,"value":1,"time":1391986800000},{"date":"2014-02-18","count":1,"value":1,"time":1392678000000},{"date":"2014-04-18","count":1,"value":1,"time":1397772000000},{"date":"2014-04-27","count":1,"value":1,"time":1398549600000}]}]'></div>
+
+        <script src="../lib/jquery/jquery.js"></script>
+        <script src="../lib/snap.svg/dist/snap.svg.js"></script>
+        <script src="../src/SnapCharts.js"></script>
+        <script src="../src/SnapCharts/TimeSeriesLineChart.js"></script>
+        <script>
+        $(function () {
+            var chart = new SnapCharts.TimeSeriesChart({
+                root: "#chart"
+            });
+        });
+        </script>
+    </body>
+</html>
