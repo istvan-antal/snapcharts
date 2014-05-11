@@ -7,21 +7,27 @@
  */
 module.exports = function (grunt) {
     'use strict';
-    var pkg = grunt.file.readJSON('package.json');
+    var pkg = grunt.file.readJSON('package.json'),
+        srcFiles = [
+            'Gruntfile.js',
+            'src/**/*.js'
+        ];
 
     // Project configuration.
     grunt.initConfig({
         jshint: {
-            all: [
-                'Gruntfile.js',
-                'src/**/*.js'
-            ],
-            options: pkg.jshintConfig,
+            all: srcFiles,
+            options: pkg.jshintConfig
+        },
+        jscs: {
+            src: srcFiles,
+            options: pkg.jscsConfig
         }
     });
 
+    grunt.loadNpmTasks('grunt-jscs-checker');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.registerTask('check', ['jshint']);
+    grunt.registerTask('check', ['jshint', 'jscs']);
 
     grunt.registerTask('default', ['check']);
 };
