@@ -60,6 +60,8 @@
         "trailing": true,
         "maxerr": 5,
         "globals": {
+            "$": true,
+            "Snap": true,
             "SnapCharts": true,
             "module": true,
             "require": true,
