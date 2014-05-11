@@ -31,7 +31,7 @@
         "grunt-template-jasmine-istanbul": "*",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-concat": "*",
-        "grunt-deployinator": "0.*"
+        "grunt-deployinator": "*"
     },
     "jshintConfig": {
         "bitwise": true,
