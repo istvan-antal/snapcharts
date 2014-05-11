@@ -5,7 +5,7 @@
 
     "main": "index.js",
     "scripts": {
-    "test": "grunt test"
+    "test": "grunt check"
     },
     "repository": {
         "type": "git",
